@@ -1,0 +1,398 @@
+/* HeaderBar Responsive Styles */
+
+.header-container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  gap: 12px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #059669 0%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.header-button-service {
+  border-color: #22c55e;
+  color: #16a34a;
+}
+
+.header-button-service:hover {
+  background-color: rgba(34, 197, 94, 0.08);
+}
+
+.header-button-marketplace {
+  border-color: #3b82f6;
+  color: #2563eb;
+}
+
+.header-button-marketplace:hover {
+  background-color: rgba(59, 130, 246, 0.08);
+}
+
+.header-profile {
+  position: relative;
+}
+
+.header-profile-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.header-profile-button:hover {
+  background-color: #f3f4f6;
+}
+
+.header-profile-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.header-profile-info {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-profile-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0;
+}
+
+.header-profile-role {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.header-profile-arrow {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+  transition: transform 0.2s;
+}
+
+.header-profile-arrow.open {
+  transform: rotate(180deg);
+}
+
+.header-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 8px;
+  width: 220px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  z-index: 50;
+}
+
+.header-dropdown-content {
+  padding: 12px;
+}
+
+.header-dropdown-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+.header-dropdown-email {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 0 0 12px;
+}
+
+.header-dropdown-score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding: 8px 0;
+}
+
+.header-dropdown-score-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #059669;
+}
+
+.header-dropdown-score-value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #059669;
+}
+
+.header-dropdown-button {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 8px;
+}
+
+.header-dropdown-button:last-child {
+  margin-bottom: 0;
+}
+
+.header-dropdown-button-secondary {
+  background-color: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+.header-dropdown-button-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.header-dropdown-button-danger {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+}
+
+.header-dropdown-button-danger:hover {
+  background-color: #b91c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 0.75rem;
+  }
+  
+  .header-inner {
+    height: 60px;
+    gap: 8px;
+  }
+  
+  .header-logo {
+    gap: 8px;
+  }
+  
+  .header-logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .header-title {
+    font-size: 20px;
+  }
+  
+  .header-subtitle {
+    font-size: 12px;
+  }
+  
+  .header-actions {
+    gap: 8px;
+  }
+  
+  .header-button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  
+  .header-profile-button {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  
+  .header-profile-avatar {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .header-profile-name {
+    font-size: 13px;
+  }
+  
+  .header-profile-role {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-content {
+    padding: 0 0.5rem;
+  }
+  
+  .header-inner {
+    height: 56px;
+    gap: 6px;
+  }
+  
+  .header-logo {
+    gap: 6px;
+  }
+  
+  .header-logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .header-title {
+    font-size: 18px;
+  }
+  
+  .header-subtitle {
+    display: none; /* Hide subtitle on small screens */
+  }
+  
+  .header-actions {
+    gap: 6px;
+  }
+  
+  .header-button {
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+  
+  .header-button span {
+    display: none; /* Hide button text on small screens */
+  }
+  
+  .header-profile-button {
+    padding: 4px 6px;
+    gap: 4px;
+  }
+  
+  .header-profile-avatar {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .header-profile-info {
+    display: none; /* Hide profile info on small screens */
+  }
+  
+  .header-dropdown {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 0 0.25rem;
+  }
+  
+  .header-inner {
+    height: 52px;
+    gap: 4px;
+  }
+  
+  .header-logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .header-title {
+    font-size: 16px;
+  }
+  
+  .header-button {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  
+  .header-profile-avatar {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .header-dropdown {
+    width: 180px;
+  }
+}

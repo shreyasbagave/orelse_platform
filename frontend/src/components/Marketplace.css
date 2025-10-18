@@ -1,0 +1,593 @@
+/* Marketplace Component Responsive Styles */
+
+.marketplace-container {
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.marketplace-subheading-bar {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.marketplace-subheading-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.marketplace-subheading-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketplace-left-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.marketplace-back-button {
+  padding: 8px 14px;
+  background: #f3f4f6;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.marketplace-back-button:hover {
+  background-color: #e5e7eb;
+}
+
+.marketplace-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.marketplace-breadcrumb-current {
+  color: #111827;
+  font-weight: 500;
+}
+
+.marketplace-right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.marketplace-wishlist-button {
+  padding: 8px 12px;
+  background: transparent;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.marketplace-wishlist-button:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.marketplace-wishlist-icon {
+  font-size: 16px;
+  color: #dc2626;
+}
+
+.marketplace-cart-button {
+  padding: 8px 16px;
+  background: #059669;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.marketplace-cart-button:hover {
+  background-color: #047857;
+}
+
+.marketplace-cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #dc2626;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.marketplace-main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.marketplace-products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.marketplace-product-card {
+  position: relative;
+  width: 360px;
+  margin: 20px auto;
+  transform: scale(1);
+  z-index: 1;
+  transition: transform 0.2s;
+  border-radius: 5%;
+  box-shadow: 0 5px 20px rgba(0,0,0,.1);
+  background: white;
+  overflow: hidden;
+}
+
+.marketplace-product-card:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+
+.marketplace-product-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: linear-gradient(to right, #a90329 0%, #c44848 44%, #aa2238 100%);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.marketplace-product-image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marketplace-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.marketplace-free-delivery-badge {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: #059669;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.marketplace-product-info {
+  padding: 20px;
+}
+
+.marketplace-product-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #18181B;
+  margin: 0 0 10px;
+  letter-spacing: -.5px;
+}
+
+.marketplace-product-description {
+  font-size: 13px;
+  color: #52525B;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.marketplace-ecoscore {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.marketplace-ecoscore-badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.marketplace-product-features {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.marketplace-feature-tag {
+  font-size: 10px;
+  background: #F4F4F5;
+  color: #71717A;
+  padding: 3px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.marketplace-product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.marketplace-price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.marketplace-price-old {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: #A1A1AA;
+  margin-bottom: 2px;
+}
+
+.marketplace-price-new {
+  font-size: 20px;
+  font-weight: 700;
+  color: #18181B;
+}
+
+.marketplace-add-to-cart-button {
+  background: #18181B;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.marketplace-product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #F4F4F5;
+  padding-top: 12px;
+}
+
+.marketplace-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.marketplace-star {
+  color: #fbbf24;
+  font-size: 16px;
+}
+
+.marketplace-star-empty {
+  color: #e5e7eb;
+  font-size: 16px;
+}
+
+.marketplace-review-count {
+  margin-left: 6px;
+  font-size: 11px;
+  color: #71717A;
+}
+
+.marketplace-stock-status {
+  font-size: 11px;
+  font-weight: 600;
+  color: #22C55E;
+}
+
+.marketplace-no-products {
+  text-align: center;
+  padding: 64px 32px;
+  background-color: #f9fafb;
+  border-radius: 16px;
+  border: 2px solid #e5e7eb;
+  width: 100%;
+}
+
+.marketplace-no-products-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0 0 12px;
+}
+
+.marketplace-no-products-description {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 0 0 24px;
+}
+
+.marketplace-clear-filters-button {
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .marketplace-main-content {
+    padding: 1.5rem 0.75rem;
+  }
+  
+  .marketplace-products-grid {
+    gap: 24px;
+  }
+  
+  .marketplace-product-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .marketplace-subheading-content {
+    padding: 0 8px;
+  }
+  
+  .marketplace-subheading-inner {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .marketplace-left-section {
+    width: 100%;
+  }
+  
+  .marketplace-right-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .marketplace-main-content {
+    padding: 1rem 0.5rem;
+  }
+  
+  .marketplace-products-grid {
+    gap: 16px;
+  }
+  
+  .marketplace-product-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+  
+  .marketplace-product-image {
+    height: 180px;
+  }
+  
+  .marketplace-product-info {
+    padding: 16px;
+  }
+  
+  .marketplace-product-title {
+    font-size: 16px;
+  }
+  
+  .marketplace-product-description {
+    font-size: 12px;
+  }
+  
+  .marketplace-price-new {
+    font-size: 18px;
+  }
+  
+  .marketplace-add-to-cart-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .marketplace-subheading-content {
+    padding: 0 4px;
+  }
+  
+  .marketplace-main-content {
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .marketplace-products-grid {
+    gap: 12px;
+  }
+  
+  .marketplace-product-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 8px auto;
+  }
+  
+  .marketplace-product-image {
+    height: 160px;
+  }
+  
+  .marketplace-product-info {
+    padding: 12px;
+  }
+  
+  .marketplace-product-title {
+    font-size: 15px;
+  }
+  
+  .marketplace-product-description {
+    font-size: 11px;
+  }
+  
+  .marketplace-ecoscore-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+  
+  .marketplace-feature-tag {
+    font-size: 9px;
+    padding: 2px 6px;
+  }
+  
+  .marketplace-price-old {
+    font-size: 12px;
+  }
+  
+  .marketplace-price-new {
+    font-size: 16px;
+  }
+  
+  .marketplace-add-to-cart-button {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  
+  .marketplace-star,
+  .marketplace-star-empty {
+    font-size: 14px;
+  }
+  
+  .marketplace-review-count {
+    font-size: 10px;
+  }
+  
+  .marketplace-stock-status {
+    font-size: 10px;
+  }
+  
+  .marketplace-no-products {
+    padding: 48px 24px;
+  }
+  
+  .marketplace-no-products-title {
+    font-size: 20px;
+  }
+  
+  .marketplace-no-products-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketplace-main-content {
+    padding: 0.5rem 0.125rem;
+  }
+  
+  .marketplace-products-grid {
+    gap: 8px;
+  }
+  
+  .marketplace-product-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 6px auto;
+  }
+  
+  .marketplace-product-image {
+    height: 140px;
+  }
+  
+  .marketplace-product-info {
+    padding: 10px;
+  }
+  
+  .marketplace-product-title {
+    font-size: 14px;
+  }
+  
+  .marketplace-product-description {
+    font-size: 10px;
+  }
+  
+  .marketplace-ecoscore-badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  
+  .marketplace-feature-tag {
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+  
+  .marketplace-price-old {
+    font-size: 11px;
+  }
+  
+  .marketplace-price-new {
+    font-size: 14px;
+  }
+  
+  .marketplace-add-to-cart-button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+  
+  .marketplace-star,
+  .marketplace-star-empty {
+    font-size: 12px;
+  }
+  
+  .marketplace-review-count {
+    font-size: 9px;
+  }
+  
+  .marketplace-stock-status {
+    font-size: 9px;
+  }
+  
+  .marketplace-no-products {
+    padding: 32px 16px;
+  }
+  
+  .marketplace-no-products-title {
+    font-size: 18px;
+  }
+  
+  .marketplace-no-products-description {
+    font-size: 13px;
+  }
+}

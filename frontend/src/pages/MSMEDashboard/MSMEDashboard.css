@@ -1,0 +1,6 @@
+/* MSMEDashboard Component Styles */
+
+.msme-dashboard-container {
+  /* This component only renders HeaderBar and UserProfile */
+  /* No specific styles needed as it uses shared components */
+}
